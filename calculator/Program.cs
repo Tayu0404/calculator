@@ -68,9 +68,7 @@ namespace calculator {
 				Size = new Size(widthsize * butLocatWidth.Length, heigthsize),
 				AutoSize = false,
 			};
-			this.Controls.AddRange(new Control[] {
-				textBox,
-			});
+			this.Controls.Add(textBox);
 			this.Controls.AddRange(buttons);
 
 			this.Size = new Size(widthsize * (butLocatWidth.Length) + 40, heigthsize * (butLocatHeigth.Length + 2) + 10);
